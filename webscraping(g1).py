@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 html = requests.get("https://g1.globo.com")
 conteudo = html.content
+x = 5
 mais_titulos = []
 mais_resumos = []
 site = BeautifulSoup(conteudo,'html.parser')
